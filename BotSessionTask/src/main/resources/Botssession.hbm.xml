@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.itl.bot.job.schedular.bean.BotsSessionBean" table="sessions">  
+    <id name="id">  
+     <generator class="assigned"></generator> 
+    </id>  
+            
+    <property name="bot_master_id"></property>  
+    <property name="channel_id"></property> 
+    <property name="customerid"></property>
+    <property name="starttime"></property>
+    <property name="endtime"></property>
+    <property name="isSessionActive"></property> 
+            
+  </class>  
+            
+ </hibernate-mapping> 
