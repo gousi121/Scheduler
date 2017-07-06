@@ -38,11 +38,6 @@
             <artifactId>quartz</artifactId>
             <version>2.0.2</version>
         </dependency>
-        <dependency>
-			<groupId>com.itl.bot.job.scheduler</groupId>
-			<artifactId>BotSessionTask</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
   </dependencies>
  <!--  <build>
   <finalName>BOTS</finalName>
