@@ -23,7 +23,7 @@ import com.itl.bot.job.scheduler.constant.ApplicationConstant;
 
 	public class EmailUtil {
 		String billername=null;
-		ConcilationClass conobject = new ConcilationClass();
+		ReconciliationJob conobject = new ReconciliationJob();
 		private static final Logger logger = LoggerFactory.getLogger(EmailUtil.class);
 	    public void sendEmail(String billerName, String filePath, String emailId) {
 
