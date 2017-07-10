@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.itl.bot.job.scheduler.bean.TaskExecutorBean" table="job_master">  
+    <id name="id">  
+     <generator class="assigned"></generator> 
+    </id>  
+            
+    <property name="job_name"></property>  
+ 	<property name="app_name"></property> 
+ 	<property name="app_type"></property>    
+    <property name="main_class_name"></property>
+    <property name="jar_name"></property>
+    <property name="year_value"></property>
+    <property name="day_of_week"></property>
+    <property name="month"></property>
+    <property name="day_of_month"></property>
+    <property name="hours"></property>
+    <property name="minutes"></property> 
+    <property name="seconds"></property> 
+    <property name="isactive"></property>
+    <property name="isdeleted"></property>    
+  </class>  
+  
+   <class name="com.itl.bot.job.scheduler.bean.BotsSessionBean" table="sessions">  
+    <id name="id">  
+     <generator class="assigned"></generator> 
+    </id>  
+            
+    <property name="bot_master_id"></property>  
+    <property name="channel_id"></property> 
+    <property name="customerid"></property>
+    <property name="starttime"></property>
+    <property name="endtime"></property>
+    <property name="isSessionActive"></property> 
+        
+  </class>  
+  
+  
+  <class name="com.itl.bot.job.latilongi.bean.LatitudeLongiBean" table="sessions">  
+    <id name="id">  
+     <generator class="assigned"></generator> 
+    </id>  
+            
+    <property name="lng"></property>  
+    <property name="lat"></property>
+    <property name="street"></property>
+    <property name="city"></property>
+    <property name="state"></property>
+    <property name="country"></property> 
+    <property name="pincode"></property> 
+ 
+            
+  </class>  
+            
+ </hibernate-mapping> 
+ 

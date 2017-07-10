@@ -4,7 +4,7 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   
  <hibernate-mapping>  
-  <class name="com.itl.bot.job.schedular.bean.TaskExecutorBean" table="job_master">  
+  <class name="com.itl.bot.job.scheduler.bean.TaskExecutorBean" table="job_master">  
     <id name="id">  
      <generator class="assigned"></generator> 
     </id>  
@@ -25,7 +25,7 @@
     <property name="isdeleted"></property>    
   </class>  
   
-   <class name="com.itl.bot.job.schedular.bean.BotsSessionBean" table="sessions">  
+   <class name="com.itl.bot.job.scheduler.bean.BotsSessionBean" table="sessions">  
     <id name="id">  
      <generator class="assigned"></generator> 
     </id>  

@@ -8,9 +8,9 @@
     <session-factory>  
         <property name="hbm2ddl.auto">update</property>  
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
-        <property name="connection.url">jdbc:mysql://172.25.2.220:3306/BOTS</property>  
+        <property name="connection.url">jdbc:mysql://172.25.1.11:3306/bots_demo_01</property>  
         <property name="connection.username">bots</property>  
-        <property name="connection.password">bots@123</property>  
+        <property name="connection.password">infra#123</property>  
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
     <mapping resource="TaskExecutor.hbm.xml"/>  
     </session-factory>  
