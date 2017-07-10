@@ -6,8 +6,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.itl.bot.job.latilongi.bean.LatitudeLongiBean;
 import com.itl.bot.latilong.connection.ConnectionClass;
@@ -28,7 +28,7 @@ import net.sf.json.JSONSerializer;
  */
 	public class ConversionUtilty {
 		
-		private static final Logger logger = LoggerFactory.getLogger(ConversionUtilty.class);
+		private static final Logger logger = LogManager.getLogger(ConversionUtilty.class);
 		private HttpURLConnection httpurlconnection;
 	
 		ConnectionClass connectionclassobject=null;

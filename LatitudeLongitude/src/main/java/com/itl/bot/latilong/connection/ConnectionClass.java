@@ -3,8 +3,8 @@ package com.itl.bot.latilong.connection;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 	/**
 	 * 
 	 * @author Gaurav Sharma
@@ -13,10 +13,10 @@ import org.slf4j.LoggerFactory;
 	 */
 
 	/**
-	 * The ConnectionClass class is used to create cooneection with database.
+	 * The ConnectionClass class is used to create connection with database.
 	 */
 	public class ConnectionClass {
-		private static final Logger logger = LoggerFactory.getLogger(ConnectionClass.class);
+		private static final Logger logger = LogManager.getLogger(ConnectionClass.class);
 		/**
 		 * This method is used to create session with hibernate
 		 * @return session	It returns Session object
